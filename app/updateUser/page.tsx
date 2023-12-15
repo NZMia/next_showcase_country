@@ -76,8 +76,7 @@ const UpdateUser = () => {
     <Flex
       align="center"
       justify="center"
-      minH="100vh"
-      p="4"
+      flex='1'
     >
       <Box maxW="md" w="100%">
         <form style={{

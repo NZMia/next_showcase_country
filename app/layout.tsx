@@ -18,7 +18,12 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en">
-      <body className={inter.className}>
+      <body className={inter.className} style={{
+        display: 'flex',
+        flexDirection: 'column',
+        minHeight: '100vh',
+        minWidth: '340px'
+      }}>
         <Providers>
           <NavigationBar />
             {children}

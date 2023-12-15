@@ -1,24 +1,24 @@
 
 
-import { Box, Text, Link, Flex } from "@chakra-ui/react";
+import { Box, Text, Link, Stack, HStack } from "@chakra-ui/react";
 
 const Footer = () => {
   return (
     <Box as="footer" p={4} bg="gray.700" color="white">
-      <Flex justify="space-between" align="center">
+       <Stack direction={['column', 'row']} spacing={4} align="center" justify="space-between">
         <Text>&copy; 2023 Created By Mia. All rights reserved.</Text>
-        <Box>
-          <Link mr={4} href="https://countries.trevorblades.com/">
+        <HStack>
+          <Link href="https://countries.trevorblades.com/" isExternal>
             Open Source (API)
           </Link>
-          <Link mr={4}  href="https://chakra-ui.com/docs/components">
+          <Link href="https://chakra-ui.com/docs/components" isExternal>
             Chakra UI (Docs)
           </Link>
-          <Link mr={4}  href="https://www.apollographql.com/docs/react/">
+          <Link href="https://www.apollographql.com/docs/react/" isExternal>
             Apollo Client (Docs)
           </Link>
-        </Box>
-      </Flex>
+        </HStack>
+      </Stack>
     </Box>
   );
 };
