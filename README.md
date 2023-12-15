@@ -1,8 +1,38 @@
 This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
 
-## Getting Started
+# Country List App
 
-First, run the development server:
+This project implements a small country list information application using Next.js, TypeScript, Chakra UI, Apollo Client, and GraphQL.(Due to the abundance of data, only a curated selection of 12 countries is displayed for demonstration purposes.)
+
+
+## Deployment
+
+The application is deployed and accessible at [next-showcase-country.vercel.app](https://next-showcase-country.vercel.app/). Feel free to visit the deployed version to explore the country list.
+
+
+
+## Quick Start on the local
+
+First, make sure you have Node.js and npm (or yarn or pnpm) installed.
+
+Clone the project locally:
+
+```bash
+git clone git@github.com:NZMia/next_showcase_country.git
+cd next_showcase_country
+```
+
+Install dependencies:
+
+```bash
+npm install
+# or
+yarn install
+# or
+pnpm install
+```
+
+Run the development server:
 
 ```bash
 npm run dev
@@ -14,23 +44,18 @@ pnpm dev
 bun dev
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+## Open Source
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+This project relies on the following open-source technologies:
 
-This project uses [`next/font`](https://nextjs.org/docs/basic-features/font-optimization) to automatically optimize and load Inter, a custom Google Font.
+- [Next.js](https://nextjs.org/): React framework for building modern single-page applications.
+- [TypeScript](https://www.typescriptlang.org/): Strongly-typed language for a better development experience.
+- [Chakra UI](https://chakra-ui.com/): A sleek and powerful React component library for building beautiful user interfaces.
+- [Apollo Client](https://www.apollographql.com/docs/react/): Frontend library for managing and making GraphQL queries.
+- [GraphQL](https://graphql.org/): Query language for fetching precise data from the server.
 
-## Learn More
+## Open API
 
-To learn more about Next.js, take a look at the following resources:
+This project utilizes the following open APIs:
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
-
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
-
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
+- [Country API](https://countries.trevorblades.com/): Provides country information for the application. 
